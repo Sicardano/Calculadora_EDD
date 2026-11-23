@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Calculator</h1>
+
+<form action="/calc" method="GET">
+    <input type="number" name="a"
+           min="-99999" max="99999"
+           step="1" required>
+
+    <input type="number" name="b"
+           min="-99999" max="99999"
+           step="1" required>
+
+    <select name="op">
+        <option value="su">Addition</option>
+        <option value="re">Subtraction</option>
+        <option value="mu">Multiplication</option>
+        <option value="po">Exponentiation</option>
+    </select>
+
+    <button type="submit">Calculate</button>
+</form>
+</body>
+</html>
